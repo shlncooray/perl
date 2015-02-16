@@ -1,7 +1,7 @@
 # perl
 <h2>Perl Repository</h3>
 
-This repository caints Perl based sample project...
+This repository contains Perl based sample project...
 
 <h3>Projects</h3>
 <ul>
