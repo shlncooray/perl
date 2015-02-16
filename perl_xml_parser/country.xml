@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<record>
+	<language name="English" iso-code="en">
+		<country name="United Kingdom" iso-code="uk">
+			<childdcr path="/temp/form/testform_en_123"/>
+			<status>final</status>
+		</country>
+		<country name="United State" iso-code="us">
+			<childdcr path="/temp/form/testform_en_765"/>
+			<status>draft</status>
+		</country>
+	</language>
+	<language name="German" iso-code="de">
+			<country name="Germany" iso-code="de">
+				<childdcr path="/temp/form/testform_de_785"/>
+				<status>draft</status>
+			</country>
+	</language>
+	<language name="Russian" iso-code="ru">
+		<country name="Russia" iso-code="ru">
+			<childdcr path="/temp/form/testform_ru_111"/>
+			<status>final</status>
+		</country>
+	</language>
+</record>
