@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+
+<topic>
+	<hashkey key="Industries">
+		<data>
+			<title>Police</title>
+			<description>Networked IT services for Police forces. Increase efficiency, engage citizens effectively.</description>
+		</data>
+	</hashkey>
+	<hashkey key="Case Study">
+		<data>
+			<title>Serco: BT selected by Serco as IT partner for new hospital in Western Australia</title>
+			<description>BT selected by Serco as IT partner for new hospital in Western Australia.</description>
+		</data>
+	</hashkey>	
+	<hashkey key="Industries">
+		<data>
+			<title>Health</title>
+			<description>Rethinking care to empower people, improve efficiency and provide higher quality care at lower cost. we're well-placed to help you improve services and cut costs.</description>
+		</data>
+	</hashkey>
+	<hashkey key="Industries">
+		<data>
+			<title>Central Government</title>
+			<description>As the UK's largest supplier of networked IT solutions for government</description>
+		</data>
+	</hashkey>
+	<hashkey key="Solutions">
+		<data>
+			<title>Keep my people connected on the move</title>
+			<description>Perform anywhere with mobility solutions that set people and business processes free.</description>
+		</data>
+	</hashkey>
+	<hashkey key="Case Study">
+		<data>
+			<title>Rhodia: New internet-enabled network creates chemistry for growth</title>
+			<description>Innovative hybrid network solution using BT IP Connect and the internet helps Rhodia extend its global reach.</description>
+		</data>
+	</hashkey>
+	<hashkey key="Industries">
+		<data>
+			<title>Financial Services</title>
+			<description>Whatever your field, our specialist teams will work with you to build customer and business value.</description>
+		</data>
+	</hashkey>
+	<hashkey key="Case Study">
+		<data>
+			<title>Barclays Bank: Free wi-fi drives customer service innovation</title>
+			<description>BT Wi-fi puts Barclays ahead of the race towards a wireless-enabled branch of the future.</description>
+		</data>
+	</hashkey>
+	<hashkey key="Solutions">
+		<data>
+			<title>Enable me to mobilize my people, processes and applications</title>
+			<description>Get mobility solutions designed to help your organization operate efficiently and competitively in a changing world.</description>
+		</data>
+	</hashkey>
+</topic>
