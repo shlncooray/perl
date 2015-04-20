@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+
+<head>
+  <!-- In production, only one script (pdf.js) is necessary -->
+  <!-- In production, change the content of PDFJS.workerSrc below -->
+  <script src="pdf.js"></script>
+
+  <script>
+	//PDFJS.workerSrc = 'pdf.worker.js';
+	
+	//'use strict';
+	/*var pdfUrls=['fiat.pdf','fixed.pdf','abc.pdf'];
+	var pdfUrl="";
+	var canvasIds=['thumb1', 'thumb2', 'thumb3'];
+	var canvasId="";*/
+	
+	/*var pdfUrls=['abc.pdf'];
+	var pdfUrl="";
+	var canvasIds=['thumb1'];
+	var canvasId="";
+		
+	function thumbanail(){
+		
+	for(i=0; i<pdfUrls.length; i++){
+		pdfUrl=pdfUrls[i];
+		canvasId=canvasIds[i];
+		
+		//document.write(pdfUrl+ " - "+canvasId+'<br/>');
+		
+		var a = document.createElement('a');
+		var linkText = document.createTextNode(pdfUrl);
+		var canvas=document.createElement('canvas');
+		canvas.id=canvasId;
+		canvas.style="width:150px; height:200px";
+		document.write('<br/>');
+		a.appendChild(linkText);
+		a.appendChild(canvas);
+		a.title = pdfUrl;
+		a.href = pdfUrl;
+		document.body.appendChild(a);
+		
+	
+		PDFJS.getDocument(pdfUrl).then(function(pdf) {
+		  pdf.getPage(1).then(function(page){
+			var scale = 1.5;
+			var viewport = page.getViewport(scale);
+
+			
+			var canvas = document.getElementById(canvasId);
+			var context = canvas.getContext('2d');
+			canvas.height = viewport.height;
+			canvas.width = viewport.width;
+
+			
+			var renderContext = {
+			  canvasContext: context,
+			  viewport: viewport
+			};
+			page.render(renderContext);
+		  });
+		});
+		}
+	}*/
+	
+  </script>
+  
+</head>
+
+<body >
+<div>
+
+  <script>
+	PDFJS.workerSrc = 'pdf.worker.js';
+	
+	'use strict';
+	var pdfUrls=['fiat.pdf','fixed.pdf','abc.pdf'];
+	var pdfUrl="";
+	//var canvasIds=['thumb1', 'thumb2', 'thumb3'];
+	//var canvasId="";
+	
+	/*var pdfUrls=['fiat.pdf'];
+	var pdfUrl="";
+	var canvasIds=['thumb1'];
+	var canvasId="";*/
+	
+	
+		
+	for(i=0; i<pdfUrls.length; i++){
+		pdfUrl=pdfUrls[i];
+		canvasId=i;
+		
+		document.write(pdfUrl+ " - "+canvasId+'<br/>');
+		
+		var a = document.createElement('a');
+		var linkText = document.createTextNode(pdfUrl);
+		var canvas=document.createElement('canvas');
+		document.write("a"+canvasId);
+		canvas.id=canvasId;
+		canvas.style="width:150px; height:200px";
+		document.write('<br/>');
+		a.appendChild(linkText);
+		a.appendChild(canvas);
+		a.title = pdfUrl;
+		a.href = pdfUrl;
+		document.body.appendChild(a);
+		document.write("b"+canvasId);
+		
+		
+		thumbanail(pdfUrl, canvasId);
+		//thumb();
+		
+		
+	}
+		
+		function thumbanail(pdfUrls, canvasIds){
+		//
+		// Fetch the PDF document from the URL
+		//
+			PDFJS.getDocument(pdfUrls).then(function(pdf) {
+		  // Using promise to fetch the page
+		  document.write("c"+pdfUrls+'<br/>');
+		  document.write("c"+canvasIds);
+		  pdf.getPage(1).then(function(page){
+			var scale = 1.5;
+			var viewport = page.getViewport(scale);
+
+			//
+			// Prepare canvas using PDF page dimensions
+			//
+			document.write("d"+canvasIds);
+			var canvas = document.getElementById(canvasIds);
+			document.write("e"+canvasId);
+			//document.write("Canvas Id : "+canvas);
+			var context = canvas.getContext('2d');
+			canvas.height = viewport.height;
+			canvas.width = viewport.width;
+
+			//
+			// Render PDF page into canvas context
+			//
+			var renderContext = {
+			  canvasContext: context,
+			  viewport: viewport
+			};
+			page.render(renderContext);
+		  });
+		});
+		}
+	
+	
+  </script>
+  
+  
+
+</div>
+	<!--
+	<a href="fiat.pdf">
+		<canvas id="thumb1" />
+	</a>
+	<br/>
+	<br/>
+	
+	<a href="fixed.pdf">
+		<canvas id="thumb2" />
+	</a>
+	<br/>
+	<br/>
+	<a href="abc.pdf">
+		<canvas id="thumb3" />
+	</a>-->
+</body>
+
+</html>
